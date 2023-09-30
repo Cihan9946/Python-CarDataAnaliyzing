@@ -10,7 +10,7 @@ with PdfPages('grafik_ve_yorum_v3.pdf') as pdf:
 
 
 
-     # Metin kutusunu oluşturun ve özelliklerini belirleyin (yorumlarınızı buraya yazın) 
+# Metin kutusunu oluşturun ve özelliklerini belirleyin (yorumlarınızı buraya yazın) 
     textbox_text = """
 CARS . CSV VERIANALIZI
 Bu sunumda bir csv veri setini
@@ -23,6 +23,7 @@ kolaylık sağlar.
         
 Bu veri seti farklı araç modellerine ait bilgileri gösteren tablodur.
 Bu tablo 9 sütun ve 4340 satırdan oluşur.
+
 
 => name => araç marka model adı
 => year => ara. üretim yılı
@@ -40,6 +41,7 @@ Bu tablo 9 sütun ve 4340 satırdan oluşur.
  
     # Yorumları PDF dosyasına ekleyin 
     pdf.savefig() 
+
  
   # 1. Yakıt türlerine göre satış fiyatı dağılımı
     plt.figure(figsize=(10, 6))
@@ -95,7 +97,6 @@ rastlamıyoruz."""
     
     # Yorumları PDF dosyasına ekleyin 
     pdf.savefig() 
-
 
 
 #4.Sahip sayısına göre araç sayısı dağılımı
@@ -252,6 +253,3 @@ rastlamıyoruz."""
 
         # Yorumları PDF dosyasına ekleyin 
     pdf.savefig()
-
-   
-   
